@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d662d4b3-da9a-499c-b87b-873979698c8c" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00_JavaStart/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00_JavaStart/src/JavaStart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_Varible/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_Varible/src/com/kh/PrintEx1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_Varible/src/com/kh/VariableEx1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_Varible/src/com/kh/VariableEx2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_Varible/src/com/kh/VariableEx3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_Varible/src/com/kh/VariableEx4.java" afterDir="false" />
-    </list>
+    <list default="true" id="d662d4b3-da9a-499c-b87b-873979698c8c" name="변경" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,6 +75,7 @@
       <workItem from="1731901423466" duration="38000" />
       <workItem from="1731906323602" duration="639000" />
       <workItem from="1731909617849" duration="208000" />
+      <workItem from="1731977744686" duration="125000" />
     </task>
     <servers />
   </component>
