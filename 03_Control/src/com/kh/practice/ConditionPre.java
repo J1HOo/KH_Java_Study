@@ -1,4 +1,4 @@
-package practice.condition;
+package com.kh.practice;
 
 import java.util.Scanner;
 
@@ -17,7 +17,7 @@ public class ConditionPre {
                 break;
 
                 case 2:
-                if(age >= 14) {
+                if(age <= 18) {
                     System.out.println("청소년 입니다.");
                 } else {
                 System.out.println("어른 입니다.");
