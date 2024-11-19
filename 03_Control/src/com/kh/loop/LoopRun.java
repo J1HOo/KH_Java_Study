@@ -16,7 +16,10 @@ public class LoopRun {
         //l2.while1();
         //l2.while2();
         //l2.while3();
-        l2.while4();
+        //l2.while4();
+
+        Menu  menu = new Menu();
+        menu.order();
     }
 
     public void abc(){
