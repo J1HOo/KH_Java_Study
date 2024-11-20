@@ -18,11 +18,15 @@ public class LoopRun {
         //l2.while3();
         //l2.while4();
 
-        Menu  menu = new Menu();
-        menu.order();
+//        Menu  menu = new Menu();
+//        menu.order();
+
+        LoopDoWhile ldw = new LoopDoWhile();
+        ldw.method1();
     }
 
-    public void abc(){
+
+    public void abc() {
         LoopEx l = new LoopEx();
         l.method1();
     }
