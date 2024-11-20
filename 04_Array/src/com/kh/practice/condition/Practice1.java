@@ -175,7 +175,10 @@ public class Practice1 {
     }
 
     public void method10() {
-        while (true) {
+
+        boolean wh = true;
+
+        while (wh) {
             System.out.println("*** 실행할 기능을 선택하세요.*** ");
             System.out.println("1. 메뉴 출력");
             System.out.println("2. 짝수/홀수");
@@ -216,11 +219,28 @@ public class Practice1 {
                     System.out.println("프로그램을 종료합니다");
                     // while 옆에 true로 적힌 부분을 변수 isTrue에 담아서
                     // 추후에 isTrue = false 로 표현해서 종료하게 만들기
+
+                    wh = false;
                     break;
+
                 default:
                     System.out.println("잘못된 입력입니다. 다시 선택해주세요.");
                     break;
             }
+        }
+    }
+    public void method6() {
+        System.out.print("관리자, 회원, 비회원 중 어떤 권한을 가지셨습니까 : ");
+        String str = sc.nextLine();
+
+        if (str.equals("관리자")) {
+            System.out.println("당신은 회원관리, 게시글관리 및 게시글 작성, 게시글 조회, 댓글 작성이 가능합니다.");
+        } else if (str.equals("회원")) {
+            System.out.println("당신은 게시글 작성, 게시글 조회, 댓글 작성이 가능합니다.");
+        } else if (str.equals("비회원")) {
+            System.out.println("당신은 게시글 조회만 가능합니다.");
+        } else {
+            System.out.println("제시된 권한을 선택 해주세요.");
         }
     }
 }
