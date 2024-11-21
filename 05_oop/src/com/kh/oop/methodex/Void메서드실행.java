@@ -16,5 +16,6 @@ public class Void메서드실행 {
         String id = "kht";
         String pw = "kht1121@";
         v1.login(id, pw);
+
     }
 }
