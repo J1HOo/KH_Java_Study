@@ -8,6 +8,11 @@ public class Student {
     private String gender; // 성별
     private String major; // 전공
 
+    //생성자
+//    public class Student2(String name, int age, String gender, String major) {
+//        // 필드 = 속성 = 멤버변수 = 전역변수(클래스 내에서 어디서든 불러 쓸 수 있는 변수)
+//    }
+
     //setter
     public void setName(String name) {
         this.name = name;

@@ -9,6 +9,7 @@ public class StudentRun {
         s.setGender("남성");
         s.setMajor("컴퓨터공학");
 
+        System.out.println(s);
         System.out.println("이름 :" + s.getName() + "\n 나이 :" + s.getAge() + "\n 성별 :" + s.getGender() + "\n 전공 :" + s.getMajor());
 
 
