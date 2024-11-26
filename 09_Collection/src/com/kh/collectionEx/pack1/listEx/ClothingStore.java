@@ -84,6 +84,16 @@ public class ClothingStore {
         System.out.println("[" + clothing.getName() + "] 추가 완료!");
     }
 
+    public boolean removeClothing(String name) {
+        for (Clothing clothing : clothingList) {
+            if (clothing.getName().equals(name)) {
+                clothingList.remove(clothing);
+                return true;
+            }
+        }
+        return false;
+    }
+
     public void allClothing() {
         if (clothingList.isEmpty()) {
             System.out.println("현재 등록된 옷이 없습니다.");
