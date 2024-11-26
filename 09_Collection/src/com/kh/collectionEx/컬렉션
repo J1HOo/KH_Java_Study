@@ -1,0 +1,54 @@
+자바 컬렉션
+
+데이터를 효율적으로 관리하고 조작하기 위한 데이터 구조와 알고리즘의 집합
+
+주요 인터페이스 : ListSet Map Queue
+인터페이스로 만들어진 객체 : ArrayList, HashSet, LinkedList, HashMap
+
+인터페이스                        특징                           인터페이스로 만들어진 객체
+
+List                  순서가 있는 데이터, 중복 허용             ArrayList, LinkedList, Vector
+Set                   순서가 없고 중복을 허용하지 않음           HashSet, TreeSet, LinkedHashSet
+Map                   키&값이 짝꿍 형태로 데이터를 관리          HashMap, TreeMap, LinkedHashMap
+Queue                 FiFO(First in Out) 요소 처리         LinkedList, PriorityQueue
+Deque                 양쪽 끝에서 삽입 및 삭제가 가능한 Queue    ArrayDeque, LinkedList
+
+
+                          Collection (상위 인터페이스)
+                           ├── List: 순서 있는 컬렉션
+                           │     ├── ArrayList
+                           │     ├── LinkedList
+                           │     └── Vector (Thread-Safe)
+                           ├── Set: 중복 없는 컬렉션
+                           │     ├── HashSet
+                           │     ├── TreeSet (정렬 지원)
+                           │     └── LinkedHashSet (삽입 순서 유지)
+                           └── Queue: 순서에 따라 처리되는 컬렉션
+                                 ├── PriorityQueue (우선순위 큐)
+                                 └── Deque (양방향 큐)
+                          Map (키-값 쌍을 다루는 인터페이스)
+                           ├── HashMap (빠른 접근 속도)
+                           ├── TreeMap (정렬된 키 관리)
+                           └── LinkedHashMap (삽입 순서 유지)
+
+
+                      Collection (상위 인터페이스)
+
+                    	•	List: 순서 있는 컬렉션
+                    	•	ArrayList: 크기 가변 배열 기반, 검색 속도 빠름.
+                    	•	LinkedList: 노드 연결 구조, 삽입·삭제 효율적.
+                    	•	Vector: Thread-Safe, 동기화 지원.
+                    	•	Set: 중복 없는 컬렉션
+                    	•	HashSet: 해시 기반, 순서 보장 안 함.
+                    	•	TreeSet: 정렬된 순서 유지 (Comparator 사용 가능).
+                    	•	LinkedHashSet: 삽입 순서 유지, 해시 기반.
+                    	•	Queue: 순서에 따라 처리되는 컬렉션
+                    	•	PriorityQueue: 요소 우선순위에 따라 처리.
+                    	•	Deque: 양방향 큐, 스택/큐로 활용 가능.
+
+
+                    Map (키-값 쌍을 다루는 인터페이스)
+
+                    	•	HashMap: 해시 기반, 빠른 접근 속도, 순서 보장 안 함.
+                    	•	TreeMap: 키의 정렬된 순서 유지 (Comparator 사용 가능).
+                    	•	LinkedHashMap: 삽입 순서 유지, 해시 기반
