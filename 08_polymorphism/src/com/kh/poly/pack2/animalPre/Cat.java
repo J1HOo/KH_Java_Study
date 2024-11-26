@@ -12,7 +12,7 @@ public class Cat extends Animal {
         this.punch = punch;
     }
 
-    public String setColor() {
+    public String getColor() {
         return color;
     }
     public int getPunch() {
