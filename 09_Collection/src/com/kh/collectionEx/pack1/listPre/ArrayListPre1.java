@@ -1,6 +1,7 @@
 package com.kh.collectionEx.pack1.listPre;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 public class ArrayListPre1 {
 
@@ -77,4 +78,34 @@ public class ArrayListPre1 {
         System.out.println("과일 바구니가 비었는가 " + list.isEmpty());
 
     }
+
+    public void method3() {
+        // 1. 숫자(int) 타입 제한
+        ArrayList<Integer> intList = new ArrayList<Integer>();
+        intList.add(1);
+        intList.add(20);
+        intList.add(300);
+        System.out.println(intList);
+
+        // 2. 문자(char) 타입 제한
+        ArrayList<Character> charList = new ArrayList<Character>();
+        charList.add('A');
+        charList.add('B');
+        charList.add('C');
+        System.out.println(charList);
+
+        // 3. 논리(boolean) 타입 제한
+        ArrayList<Boolean> boolList = new ArrayList<Boolean>();
+        boolList.add(true);
+        boolList.add(false);
+        System.out.println(boolList);
+
+        // 4. 실수(double) 타입 제한
+        ArrayList<Double> doubleList = new ArrayList<Double>();
+        doubleList.add(1.5);
+        doubleList.add(3.14);
+        System.out.println(doubleList);
+
+    }
+
 }
