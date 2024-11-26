@@ -58,5 +58,42 @@ public class BookService {
 
         System.out.println(list1);
         System.out.println(list1.size()); // 총 개수 세기
+
     }
+
+    // 책 저장하기
+    private ArrayList<Book> bookList = new ArrayList<>();
+
+    public void addBook(String title, String author, int price) {
+        Book book = new Book(title, author, price);
+
+        bookList.add(book);
+//        bookList.add( new Book(title, author, price)); 으로 처리 가능
+        System.out.println(bookList);
+        System.out.println("책이 성공적으로 추가 되었습니다.");
+
+    }
+
+    // 저장된 책 모두 확인하기
+    public ArrayList<Book> getBookList() {
+        return bookList; // 가지고 있는 모든 책 리스트 호출해서 전달하기
+
+    }
+
+    // 책 삭제하기 기능
+    public boolean removeBook(String title) {
+        for (Book book : bookList) {
+            if (book.getTitle().equals(title)) {
+                bookList.remove(book);
+                return true;
+            }
+        }
+        return false;
+    }
+//      향상된 for 문(for each문)
+//    	1.	bookList에서 첫 번째 요소를 꺼내와 book에 저장. (Book book : bookList)
+//	    2.	코드 블록(중괄호 안의 코드)을 실행.
+//      3.	bookList에서 다음 요소를 꺼내와 book에 저장.
+//      4.	모든 요소를 순회할 때까지 반복.
+
 }
