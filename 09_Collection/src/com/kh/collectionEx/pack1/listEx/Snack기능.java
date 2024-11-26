@@ -12,6 +12,7 @@ public class Snack기능 {
 
         System.out.print("과자 가격을 입력하세요 : ");
         int price = sc.nextInt();
+        sc.nextLine();
 
         System.out.print("과자 재고수량을 입력하세요 : ");
         int quantity = sc.nextInt();
