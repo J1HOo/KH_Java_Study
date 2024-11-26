@@ -90,7 +90,7 @@ public class BookService {
         }
         return false;
     }
-//      향상된 for 문(for each문)
+//      향상된 for 문(for-each문)
 //    	1.	bookList에서 첫 번째 요소를 꺼내와 book에 저장. (Book book : bookList)
 //	    2.	코드 블록(중괄호 안의 코드)을 실행.
 //      3.	bookList에서 다음 요소를 꺼내와 book에 저장.
