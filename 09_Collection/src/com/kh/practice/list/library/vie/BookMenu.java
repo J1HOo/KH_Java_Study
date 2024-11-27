@@ -26,10 +26,10 @@ public class BookMenu {
     }
 
     // 3. 도서 검색
-    public void searchBook(String keyword) {
+    public void searchBook(String title) {
         ArrayList<Book> searchList = new ArrayList<>();
         for (Book book : bookList) {
-            if (book.getTitle().contains(keyword)) {
+            if (book.getTitle().contains(title)) {
                 searchList.add(book);
             }
         }
