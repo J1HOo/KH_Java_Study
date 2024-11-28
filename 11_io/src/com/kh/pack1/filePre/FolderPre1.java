@@ -7,7 +7,7 @@ public class FolderPre1 {
 
     public void method1() {
         String path = System.getProperty("user.home");
-        File dir = new File(path, "profileImg");
+        File dir = new File(path, "Desktop/profileImg");
 
             if (dir.exists()) {
                 System.out.println("이미 존재하는 폴더입니다.");
