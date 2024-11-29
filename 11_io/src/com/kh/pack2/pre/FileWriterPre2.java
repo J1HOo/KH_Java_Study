@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.Writer;
 
-public class FileWritePre2 {
+public class FileWriterPre2 {
     public boolean method1() {
         File file = new File(System.getProperty("user.home") + "/Desktop/lunch.txt");
 
@@ -30,7 +30,7 @@ public class FileWritePre2 {
     }
 
     public static void main(String[] args) {
-        FileWritePre2 fwp = new FileWritePre2();
+        FileWriterPre2 fwp = new FileWriterPre2();
         fwp.method1();
     }
 }

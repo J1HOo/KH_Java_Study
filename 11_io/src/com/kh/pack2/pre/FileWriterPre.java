@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.Writer;
 
-public class FileWritePre {
+public class FileWriterPre {
     public void method1 () {
         File file = new File(System.getProperty("user.home") + "/Desktop/hello.txt");
 
