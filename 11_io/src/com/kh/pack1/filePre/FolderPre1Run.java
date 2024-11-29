@@ -7,7 +7,9 @@ public class FolderPre1Run {
 //            folderPre1.method2();
 
             FilePre2 filePre2 = new FilePre2();
-            filePre2.method1();
+//            filePre2.method1();
+            FilePre2 fp2 = new FilePre2();
+            fp2.method1();
 
         }
     }
