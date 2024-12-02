@@ -1,4 +1,4 @@
-package com.kh.pack3.pre;
+package com.kh.pack2.pre4;
 
 import java.util.Scanner;
 
