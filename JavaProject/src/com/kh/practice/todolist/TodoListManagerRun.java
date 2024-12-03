@@ -20,11 +20,11 @@ public class TodoListManagerRun {
 
         switch (listChoice) {
             case "1":
-                System.out.print("불러올 To-Do 리스트 파일 이름을 입력하세요(확장자 제외): ");
+                System.out.print("불러올 To-Do 리스트 파일 이름을 입력하세요(확장자 제외) : ");
                 FILE_NAME = sc.nextLine() + EXT_NAME;
                 File file = new File(PATH, FILE_NAME);
                 if (!file.exists()) {
-                    System.out.println("파일을 찾을 수 없습니다: " + FILE_NAME + " 새로운 파일을 생성하거나 확인하세요.");
+                    System.out.println("파일을 찾을 수 없습니다 : " + FILE_NAME + " 새로운 파일을 생성하거나 확인하세요.");
                     return;
                 }
                 break;
