@@ -21,8 +21,8 @@ public class ArraysPre {
         System.out.println("모든 값을 500으로 " + Arrays.toString(arr1));
 
         // TODO: 4. arr1과 arr2의 값이 모두 같은지 비교하고 비교한 결과 값 출력
-        boolean areEqual = Arrays.equals(arr1, arr2);
-        System.out.println("값이 일치하는가 " + areEqual);
+        boolean equal = Arrays.equals(arr1, arr2);
+        System.out.println("값이 일치하는가 " + equal);
     }
 
     public void int2DArray() {
