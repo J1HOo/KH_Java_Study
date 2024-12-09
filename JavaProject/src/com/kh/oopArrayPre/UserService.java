@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class UserService {
-    public static void main(String[] args) {
+    public  void setSaveAllUser() {
         Scanner sc = new Scanner(System.in);
         ArrayList<User> users = new ArrayList<>();
 
@@ -23,36 +23,42 @@ public class UserService {
 
         System.out.println("이름을 입력하세요 : ");
         String inputName = sc.nextLine();
-        if (inputName != null && inputName.length() <= 6) {
+        if (inputName != null && inputName.length() > 2 && inputName.length() <= 6) {
             System.out.println("성공적으로 기입 되었습니다.");
             user2.setUserName(inputName);
         } else {
-            System.out.println("이름은 빈 값이거나 6글자 이상일 수 없습니다.");
+            System.out.println("이름은 빈 값이거나 1글자 미만 6글자 이상일 수 없습니다.");
             return;
         }
 
         System.out.println("이메일을 입력하세요 : ");
         String inputEmail = sc.nextLine();
-        if (inputEmail != null && inputEmail.length() <= 30) {
+        if (inputEmail != null && inputEmail.length() >= 8 && inputEmail.length() <= 30) {
             System.out.println("성공적으로 기입 되었습니다.");
             user2.setEmail(inputEmail);
 
         } else {
-            System.out.println("이메일은 빈 값이거나 30글자 이상일 수 없습니다.");
+            System.out.println("이메일은 빈 값이거나  8글자 미만 30글자 이상일 수 없습니다.");
             return;
         }
 
         System.out.println("나이를 입력하세요 : ");
         int inputAge = sc.nextInt();
         sc.nextLine();
-        if (inputAge != 0) {
-            System.out.println("성공적으로 기입 되었습니다.");
-            user2.setAge(inputAge);
+        try {
+            if (inputAge != 0 && inputAge < 100) {
+                System.out.println("성공적으로 기입 되었습니다.");
+                user2.setAge(inputAge);
 
-        } else {
-            System.out.println("나이는 0일 수 없습니다.");
+            } else {
+                System.out.println("나이는 1 이상 100 미만으로 입력 가능합니다.");
+                return;
+            }
+        } catch (Exception e) {
+            System.out.println("나이는 숫자만 입력 가능합니다.");
             return;
         }
+
 
         System.out.println("=== 저장된 사용자 정보 ===");
         // ArrayList 이용해서 정보 저장하고
@@ -63,5 +69,34 @@ public class UserService {
         for (User user : users) {
             System.out.println(user);
         }
+    }
+
+    public void paramNameEmail() {
+        Scanner sc = new Scanner(System.in);
+
+        User user = new User();
+
+        System.out.print("이름을 입력하세요 : ");
+        String name = sc.nextLine();
+        user.setUserName(name);
+
+        System.out.print("이메일을 입력하세요 : ");
+        String email = sc.nextLine();
+        user.setEmail(email);
+
+        System.out.print("나이를 입력하시겠습니까? (yes/no) : ");
+        String ageChoice = sc.nextLine().trim().toLowerCase();
+
+        if (ageChoice.equals("yes")) {
+            System.out.print("나이를 입력하세요 : ");
+            int age = sc.nextInt();
+            sc.nextLine();
+            user.setAge(age);
+
+        } else {
+            user.setAge(0);
+        }
+
+        System.out.println(user);
     }
 }
