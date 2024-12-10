@@ -1,4 +1,4 @@
-package com.kh.oopArrayPre;
+package com.kh.practiceEx.oopArrayPre;
 
 public class Student {
     // 멤버변수 전역변수 인스턴스 필드 속성 필드

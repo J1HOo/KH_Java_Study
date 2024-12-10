@@ -1,4 +1,4 @@
-package com.kh.oopArrayPre;
+package com.kh.practiceEx.oopArrayPre;
 
 public class UserServiceRun {
     public static void main(String[] args) {

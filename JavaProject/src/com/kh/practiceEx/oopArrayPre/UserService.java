@@ -1,4 +1,4 @@
-package com.kh.oopArrayPre;
+package com.kh.practiceEx.oopArrayPre;
 
 import java.util.ArrayList;
 import java.util.Scanner;
