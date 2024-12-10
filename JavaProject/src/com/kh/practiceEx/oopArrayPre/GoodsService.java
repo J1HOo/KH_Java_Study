@@ -24,6 +24,16 @@ public class GoodsService {
 
     }
 
+    public Goods getGoodsByName(String name) {
+        for (Goods goods : goodsList) {
+            if (goods.getName().equals(name)) {
+                return goods;
+            }
+        }
+        System.out.println (name + " 과 이름이 일치하는 상품이 없습니다.");
+        return null;
+    }
+
     // 모든 상품 보기 기능
     public void displayAllGoods() {
         if (goodsList.isEmpty()) {
