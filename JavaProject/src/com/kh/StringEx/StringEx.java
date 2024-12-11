@@ -71,6 +71,28 @@ str.isBlank()                                = 공백만 포함하거나 비어�
 
             // str1 앞뒤 공백 제거
             System.out.println("str1의 앞뒤 공백 제거 : " + str1.trim());
+
+            // subString 이용해서 str3 6번째부터 끝까지 자르기
+            String str3 = "Hello Java World";
+            System.out.println("str3 6번째 부터 문자 제거 : " + str3.substring(6));
+
+            // subString str3 3 ~ 7 까지만 자르기
+            System.out.println("str3 3번째 부터 7번째 까지 문자 제거 : " + str3.substring(3, 7));
+
+            // replace Java를 HTML로 글자 수정
+            System.out.println("str3의 JAVA 워딩 HTML로 수정 : " + str3.replace("Java", "HTML"));
+
+            // concat str4를 str3와 결합
+            String str4 = " Let`s learn!";
+            System.out.println("str3와 str4 결합 : " + str3.concat(str4));
+
+            // split 문자열을 공백(" ")을 기준으로 나누고 for-each 이용해서 출력
+            String[] texts = str3.split(" ");
+             for (String text : texts) {
+                 System.out.println("str3의 공백을 기준으로 글씨 나누기 : " + texts);
+             }
+
+
         }
 
 
